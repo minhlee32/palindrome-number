@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class PalindromeInteger {
     public static void main(String[] args) {
         int a;
-        int b;
         System.out.println("Please enter a number");
         Scanner input = new Scanner(System.in);
         a = input.nextInt();
@@ -12,7 +11,7 @@ public class PalindromeInteger {
 
 
     }
-    public static int reverse(int a) {
+    private static int reverse(int a) {
         int b = 0;
         int c;
         for (int i = 0; i < a; i++) {
@@ -25,7 +24,7 @@ public class PalindromeInteger {
         return b;
     }
 
-    public static boolean isPalinddromeInteger(int a) {
+    private static boolean isPalinddromeInteger(int a) {
         if (a == reverse(a)) {
             System.out.println(a + " is a palindrome number");
             return true;
